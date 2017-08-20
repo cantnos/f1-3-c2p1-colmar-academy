@@ -1,0 +1,258 @@
+/* Universal Styles */
+html {
+  font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+      color: #4a4a4a;
+}
+body {
+    display: block;
+}
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 3rem;
+        font-weight: bold;
+}
+h3{
+      font-size: 1.25rem;
+
+}
+p{
+      font-size: 1.25rem;
+
+}
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+  z-index: 100;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem 0 1.5rem;
+}
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+header .logo {
+  flex: 1;
+}
+header span-a {
+color:#d8d4d4;
+}
+header .mobile {
+  display: none;
+}
+@media only screen and (max-width: 340px) {
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Body */
+.main-content{
+width: 100%;
+margin: auto;
+}
+
+/*  learn Section */
+#learn-section {
+  display: flex;
+  background-color: #d1d3d6;
+  margin: auto;
+  padding: 2rem;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  background-color: #d1d3d6;
+  margin: auto;
+}
+
+.feature .image-container  img{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+.image-container span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.feature  {
+  padding: 1.5rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.button{
+      display: flex;
+      justify-content: center;
+      background-color: grey;
+      color: white;
+      padding: 0.5rem 0 0.5rem 0;
+    width: 20rem;
+}
+@media only screen and (max-width: 340px) {
+  .feature .image-container  img{
+    display: none;
+    }
+}
+/* Practice */
+#practice-section {
+  display: flex;
+  background-color: #fcfcfc;
+  margin: auto;
+  width: 100%;
+}
+
+.column1 {
+  flex: 1;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  margin: auto;
+}
+.column1 .image-container  img{
+  display: block;
+  max-height: 100%;
+      max-width: 100%;
+}
+
+ .title {
+    display: flex;
+    text-align: left;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.title h1{
+  padding-bottom: 2rem;
+}
+
+.practice .image-container span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+.practice .center  .image-container{
+
+  display: inline-flex;
+  }
+  .center .orientation {
+    padding: 1rem;
+  }
+.orientation{
+width: 40%;
+  }
+.box{
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 340px) {
+.column1  {
+    display: none;
+    }
+}
+/* start learning Section */
+#start-section {
+  padding:  0 4.5rem 0 4.5rem;
+  background-color: #f2f3f4;
+
+}
+
+#start-section .content {
+  padding: 2rem 0 2rem 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#start-section .images-container{
+  display: flex;
+justify-content: space-between;
+width: 30%;
+
+}
+#start-section .image-container {
+  padding: 2rem;
+}
+.content h1  {
+padding: 1rem 0 1rem 0;
+}
+.content h3  {
+padding: 1rem 0 2rem 0;
+}
+
+.image-container .description {
+  background-color: white;
+  display: flex;
+  text-align: left;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+#start-section .mobile  {
+  display: none;
+  }
+@media only screen and (max-width: 340px) {
+  #start-section .desktop  {
+    display: none;
+    }
+#start-section .mobile {
+  display: block;
+  background-color: #d0d2d8 ;
+}
+.learning-category {
+    margin: .5rem;
+}
+}
+/* thesis */
+#thesis-section {
+  display: flex;
+  background-color: #fcfcfc;
+  padding: 2rem;
+}
+#thesis-section .content{
+  font-weight: bold;
+  text-align: center;
+}
+/* Footer */
+
+footer {
+  background-color: white;
+  padding: 1em 1em 2em 1.5em;
+  border-top: solid 1px #cfd0d3;
+}
+footer .info{
+display: flex;
+}
+footer .left{
+flex-grow: 1;
+}
+@media only screen and (max-width: 340px) {
+  footer .right {
+    display: none;
+  }
+}
